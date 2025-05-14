@@ -8,13 +8,18 @@ from scipy.stats import spearmanr        # saw example on scipy.org
 from sklearn.decomposition import PCA    # followed scikit‑learn quickstart
 from sklearn.preprocessing import StandardScaler
 
+from google.colab import files
+uploaded = files.upload()
+
 
 xlsx = Path("GSE246487_DESeq2_results_4_tabs.xlsx")
 out_tab = Path("results/tables"); out_tab.mkdir(parents=True, exist_ok=True)
 out_fig = Path("results/figs");   out_fig.mkdir(parents=True, exist_ok=True)
 
 # read sheets (Used pandas.read_excel guide for the code)
+xlsx = "GSE246487_DESeq2_results_4_tabs.xlsx"
 wb, data = pd.ExcelFile(xlsx), {}
+
 for s in wb.sheet_names:
     d = pd.read_excel(xlsx, sheet_name=s).rename(columns=str.strip)
     d["log2FC"] = pd.to_numeric(d.get("log2(FC)", d.get("log2FC")), errors="coerce")
@@ -38,7 +43,7 @@ sns.barplot(data=deg_df.melt("contrast", ["up","down"], var_name="dir"),
 plt.xticks(rotation=45, ha="right")
 plt.tight_layout()
 plt.savefig(out_fig / "deg_counts_bar.png", dpi=300)
-plt.close()
+plt.show()
 
 # Volcano Plot from Seaborn documentation
 for n, d in data.items():
@@ -53,7 +58,7 @@ for n, d in data.items():
     plt.title(n)
     plt.tight_layout()
     plt.savefig(out_fig / f"volcano_{n.replace(' ','_')}.png", dpi=300)
-    plt.close()
+    plt.show()
 
 # Heat map of correlation(From Seaborn heatmap gallery documentation)
 contr = list(data)
@@ -70,7 +75,7 @@ plt.figure(figsize=(5,4))
 sns.heatmap(corr, annot=True, cmap="vlag", vmin=-1, vmax=1)
 plt.tight_layout()
 plt.savefig(out_fig / "contrast_corr_heatmap.png", dpi=300)
-plt.close()
+plt.show()
 
 # Overlapping Combinations (idea from a blog post relating to data analysis)
 sig_sets = {c:set(d[(d.padj<0.05)&(d.log2FC.abs()>1)].GeneID) for c,d in data.items()}
@@ -95,7 +100,7 @@ sns.barplot(x="count",
 plt.xlabel("genes"); plt.ylabel("overlap pattern")
 plt.tight_layout()
 plt.savefig(out_fig / "upset_like_overlap.png", dpi=300)
-plt.close()
+plt.show()
 
 # PCA on contrast signatures (Used sklearn PCA cheat sheet)
 wide = pd.concat({c:d.set_index("GeneID").log2FC for c,d in data.items()}, axis=1).dropna()
@@ -111,7 +116,7 @@ for lbl,r in pca.iterrows():
 plt.axhline(0,c='grey',lw=.5); plt.axvline(0,c='grey',lw=.5)
 plt.tight_layout()
 plt.savefig(out_fig / "contrasts_pca.png", dpi=300)
-plt.close()
+plt.show()
 
 # Heat map for the top 20 variables
 top20 = wide.var(1).nlargest(20).index
@@ -119,4 +124,4 @@ plt.figure(figsize=(6,6))
 sns.heatmap(wide.loc[top20], cmap="vlag", center=0, linewidths=.5)
 plt.tight_layout()
 plt.savefig(out_fig / "top20_heatmap.png", dpi=300)
-plt.close()
+plt.show()
