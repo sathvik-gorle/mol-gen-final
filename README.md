@@ -51,7 +51,7 @@ Correlation analysis across the whole genome reinforced the idea that the two bi
 </details>
 
 ## Conclusion
-Together, these results strongly display that corn‑kernel biochar, the fine‑pore group, doesn’t only adsorb (hold) PCBs but also increases the metabolic state of LB400, allowing it to pair biphenyl breakdown with enhanced carbon fixation and redox balancing. For real life applications, this data shows that choosing the right biochar can double or even triple the number of genes that are pushed toward faster PCB degradation compared with a standard GAC amendment.
+Together, these results strongly display that corn‑kernel biochar, the fine‑pore group, doesn’t only adsorb (hold) PCBs but also increases the metabolic state of LB400, allowing it to pair biphenyl breakdown with enhanced carbon fixation and redox balancing. For real life applications, this data shows that choosing the right biochar can double or even triple the number of genes that are pushed toward faster PCB degradation compared with a standard granular activated carbon (GAC) amendment.
 
 ## Citations
 MDPI. (2024, October 31). Biochar Composite with Enhanced Performance Prepared Through Microbial . https://www.mdpi.com/1422-0067/25/21/11732
