@@ -36,13 +36,19 @@ Volcano plots illustrated this clearly when the bbiochar contrasts displayed wid
 
 Correlation analysis across the whole genome reinforced the idea that the two biochars provoke a common response. Their log₂‑fold‑change vectors showed a Spearman correlation of about 0.7, while each biochar displayed mild negative correlation with the attachment only contrasting it. A component plot told the same story at a glance: PC1 separated “biochar” from “GAC" (Granular Activated Carbon), while PC2 distinguished was surface attached. One interesting finding was how the fine‑pore SB biochar sat furthest from GAC, whereas the coarse pore (LB) biochar fell in between, hinting that pore size or external surface area is a key variable. Going more into depth on the gene-overlap patterns, I discovered that nearly half of all significant genes in the SB‑vs‑GAC comparison were unique to that contrast. Many of these unique genes encode oxidative stress enzymes, including catalase (katA) and superoxide dismutase (sodB), which fits with the idea that SB’s higher surface reactivity creates a more oxidizing particle (Bako). Finally, a heat map of the twenty most variable genes captured this trend graphically: red blocks (up‑regulation) dominated the SB and LB columns for catabolic and CO₂‑fixation genes, whereas the GAC remained mostly pale (Dong et al.)
 
+<details>
+<summary>Click to view the rest of the plots! </summary>
 
-![image](https://github.com/user-attachments/assets/b316ef23-5658-4c0f-a827-76962321d2a6)
-![image](https://github.com/user-attachments/assets/b6a4a711-fea1-4098-98cf-4d0b3afa0e78)
-![image](https://github.com/user-attachments/assets/7435a9ee-05b8-4c8f-b72d-33b3c3d1d5f8)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b316ef23-5658-4c0f-a827-76962321d2a6" width="320">
+  <img src="https://github.com/user-attachments/assets/b6a4a711-fea1-4098-98cf-4d0b3afa0e78" width="320">
+</p>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7435a9ee-05b8-4c8f-b72d-33b3c3d1d5f8" width="320">
+  <img src="https://github.com/user-attachments/assets/cb3ecc1e-e688-4e11-9ab7-7bd9a1e7bea8" width="320">
+</p>
 
-![image](https://github.com/user-attachments/assets/cb3ecc1e-e688-4e11-9ab7-7bd9a1e7bea8)
-
+</details>
 
 
 ## Citations
