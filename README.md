@@ -26,6 +26,9 @@ Volcano plots illustrated this clearly when the bbiochar contrasts displayed wid
 ![image](https://github.com/user-attachments/assets/f1017ced-6a7a-412f-bcb6-00bb9f883832)
 
 ![image](https://github.com/user-attachments/assets/56e3f66a-59ad-4217-b291-84a50f423614)
+
+Correlation analysis across the whole genome reinforced the idea that the two biochars provoke a common response. Their log₂‑fold‑change vectors showed a Spearman correlation of about 0.7, while each biochar displayed mild negative correlation with the attachment only contrasting it. A component plot told the same story at a glance: PC1 separated “biochar” from “GAC" (Granular Activated Carbon), while PC2 distinguished was surface attached. One interesting finding was how the fine‑pore SB biochar sat furthest from GAC, whereas the coarse pore (LB) biochar fell in between, hinting that pore size or external surface area is a key variable. Going more into depth on the gene-overlap patterns, I discovered that nearly half of all significant genes in the SB‑vs‑GAC comparison were unique to that contrast. Many of these unique genes encode oxidative stress enzymes, including catalase (katA) and superoxide dismutase (sodB), which fits with the idea that SB’s higher surface reactivity creates a more oxidizing particle (Bako). Finally, a heat map of the twenty most variable genes captured this trend graphically: red blocks (up‑regulation) dominated the SB and LB columns for catabolic and CO₂‑fixation genes, whereas the GAC remained mostly pale (Dong et al.)
+
 ![image](https://github.com/user-attachments/assets/873ecbca-f9d9-44b6-9bc9-182e1a2016ce)
 
 ![image](https://github.com/user-attachments/assets/b316ef23-5658-4c0f-a827-76962321d2a6)
@@ -44,3 +47,11 @@ Liu, Z. & Zhang, Y. 2025. Journal of Biochar Science. DOI: 10.1007/s42773‑02
 Springer. (2025, March 18). Interactions between microbial extracellular polymeric substances and . https://link.springer.com/article/10.1007/s42773-025-00452-4
 
 Dong, Q. et al. 2024. Environmental Science & Technology. PMID: 38840421 https://pubmed.ncbi.nlm.nih.gov/38840421/
+
+Bako, C. M., Mattes, T. E., Marek, R. F., Hornbuckle, K. C., & Schnoor, J. L. (2021). Biodegradation of PCB congeners by Paraburkholderia xenovorans LB400 in the presence and absence of sediment during laboratory bioreactor experiments. Environmental Pollution, 271, 116364. https://pubmed.ncbi.nlm.nih.gov/33412450/
+
+Dong, Q., LeFevre, G. H., & Mattes, T. E. (2024). Black carbon impacts on Paraburkholderia xenovorans strain LB400 cell enrichment and activity: Implications for lower‑chlorinated PCB biodegradation. Environmental Science & Technology, 58(8), 3895‑3907. https://pubmed.ncbi.nlm.nih.gov/38356175/
+
+
+
+
