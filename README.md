@@ -22,14 +22,20 @@ After processing the four contrasts in dataset GSE246487, I found that simply 
 ![image](https://github.com/user-attachments/assets/ce51f056-3345-4b42-a738-6ab20efc87ce)
 
 Volcano plots illustrated this clearly when the bbiochar contrasts displayed wide, symmetric “wings” of significant up‑ and down‑regulation, whereas the attachment effect was narrower. What surprised me most was a coordinated up‑regulation of the Calvin‑cycle genes (cbbL/S) on both biochars but not on GAC. That suggests that LB400 may be using CO₂ fixation to balance its redox budget when decomposing PCB molecules, a possibility I had not considered before beginning the project (Dong) & (MDPI).
-![image](https://github.com/user-attachments/assets/e145cf60-0888-4707-afad-7bb8c524a98e)
-![image](https://github.com/user-attachments/assets/f1017ced-6a7a-412f-bcb6-00bb9f883832)
+<!-- two images on the first row -->
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e145cf60-0888-4707-afad-7bb8c524a98e" width="320">
+  <img src="https://github.com/user-attachments/assets/f1017ced-6a7a-412f-bcb6-00bb9f883832" width="320">
+</p>
 
-![image](https://github.com/user-attachments/assets/56e3f66a-59ad-4217-b291-84a50f423614)
+<!-- two images on the second row -->
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/56e3f66a-59ad-4217-b291-84a50f423614" width="320">
+  <img src="https://github.com/user-attachments/assets/873ecbca-f9d9-44b6-9bc9-182e1a2016ce"  width="320">
+</p>
 
 Correlation analysis across the whole genome reinforced the idea that the two biochars provoke a common response. Their log₂‑fold‑change vectors showed a Spearman correlation of about 0.7, while each biochar displayed mild negative correlation with the attachment only contrasting it. A component plot told the same story at a glance: PC1 separated “biochar” from “GAC" (Granular Activated Carbon), while PC2 distinguished was surface attached. One interesting finding was how the fine‑pore SB biochar sat furthest from GAC, whereas the coarse pore (LB) biochar fell in between, hinting that pore size or external surface area is a key variable. Going more into depth on the gene-overlap patterns, I discovered that nearly half of all significant genes in the SB‑vs‑GAC comparison were unique to that contrast. Many of these unique genes encode oxidative stress enzymes, including catalase (katA) and superoxide dismutase (sodB), which fits with the idea that SB’s higher surface reactivity creates a more oxidizing particle (Bako). Finally, a heat map of the twenty most variable genes captured this trend graphically: red blocks (up‑regulation) dominated the SB and LB columns for catabolic and CO₂‑fixation genes, whereas the GAC remained mostly pale (Dong et al.)
 
-![image](https://github.com/user-attachments/assets/873ecbca-f9d9-44b6-9bc9-182e1a2016ce)
 
 ![image](https://github.com/user-attachments/assets/b316ef23-5658-4c0f-a827-76962321d2a6)
 ![image](https://github.com/user-attachments/assets/b6a4a711-fea1-4098-98cf-4d0b3afa0e78)
